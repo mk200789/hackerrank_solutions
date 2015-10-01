@@ -1,4 +1,4 @@
-def simple-array-sum():
+def simple_array_sum():
 	size = input()
 	array1 = raw_input().split()
 	solution = 0
@@ -9,5 +9,5 @@ def simple-array-sum():
 	return solution
 
 
-if '__name__' == '__main__':
-	simple-array-sum()
+if __name__ == '__main__':
+	print simple_array_sum()
