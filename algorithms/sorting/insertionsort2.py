@@ -3,12 +3,15 @@
 #	s - the size of the array			   #
 #	ar - the sorted array of integers	   #
 # 										   #
+# Constraints							   #
+# 	1 <= s <= 100						   #
+# 	-1000 <= x <= 1000, x E ar			   #
 ############################################
 
 def insertionSort(ar):
 	s = len(ar)
 	for i in xrange(s-1):
-		if ar[i] >= ar[i+1]:
+		if ar[i] > ar[i+1]:
 			temp = ar[i]
 			ar[i] = ar[i+1]
 			ar[i+1] = temp
